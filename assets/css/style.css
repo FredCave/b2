@@ -1,0 +1,444 @@
+/* line 1, style.scss */
+#wpadminbar {
+  display: none;
+}
+
+/************************************************
+	CSS RESET
+************************************************/
+/* line 9, style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 9, style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 9, style.scss */
+body {
+  line-height: 1;
+}
+
+/* line 9, style.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 9, style.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 9, style.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 9, style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/************************************************
+	FONTS
+************************************************/
+@font-face {
+  font-family: 'Frank';
+  src: url("assets/fonts/franklingothic-book-webfont.woff2") format("woff2"), url("assets/fonts/franklingothic-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/************************************************
+	GENERAL
+************************************************/
+/* line 31, style.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  font-family: Frank, "Franklin Gothic";
+  font-size: 1.05em;
+  line-height: 1.4;
+}
+
+/* line 40, style.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 45, style.scss */
+hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+}
+
+/************************************************
+	NAV
+************************************************/
+/* line 56, style.scss */
+#nav_wrapper {
+  display: none;
+}
+
+/************************************************
+	HOME
+************************************************/
+/* line 64, style.scss */
+#home_wrapper {
+  width: 100%;
+  height: auto;
+}
+
+/* line 70, style.scss */
+.home_section {
+  min-height: 100vh;
+}
+
+/* line 75, style.scss */
+#home_landing {
+  display: none;
+}
+
+/* line 79, style.scss */
+#home_projects ul {
+  margin: 24px;
+}
+/* line 82, style.scss */
+#home_projects ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 24px 36px 0;
+  width: 24vw;
+  height: calc( 16.67vw + 36px );
+}
+/* line 89, style.scss */
+#home_projects ul li .home_project_image {
+  width: 100%;
+  height: calc( 100% - 24px );
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+/* line 95, style.scss */
+#home_projects ul li .home_project_image img {
+  height: 100%;
+  width: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+/************************************************
+	BOOKSHOP
+************************************************/
+/* line 114, style.scss */
+.bookshop_wrapper {
+  margin: 18px 18px 64px 18px;
+}
+
+/* line 119, style.scss */
+#bookshop_ordering {
+  margin-bottom: 24px;
+}
+
+/* line 124, style.scss */
+#bookshop_list li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 24px 24px 0;
+  max-width: 25vw;
+  transition: transform 0.5s;
+}
+/* line 131, style.scss */
+#bookshop_list li .bookshop_preview {
+  max-width: 25vw;
+  margin-bottom: 12px;
+}
+/* line 135, style.scss */
+#bookshop_list li .bookshop_preview img {
+  width: 25vw;
+  height: auto;
+  transition: filter 0.5s;
+}
+/* line 140, style.scss */
+#bookshop_list li .bookshop_preview img.portrait {
+  height: 25vw;
+  width: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+/* line 147, style.scss */
+#bookshop_list li .bookshop_preview_text {
+  font-family: "Sangbleu King", serif;
+  font-size: 1em;
+  width: 100%;
+}
+/* line 151, style.scss */
+#bookshop_list li .bookshop_preview_text h2 {
+  margin: 0 8px 4px 4px;
+}
+/* line 154, style.scss */
+#bookshop_list li .bookshop_preview_text p {
+  margin: 0 8px 4px 36px;
+}
+/* line 159, style.scss */
+#bookshop_list li:hover {
+  transform: translateY(6px);
+}
+
+/* line 167, style.scss */
+.product {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 172, style.scss */
+.product .product_column {
+  flex-basis: 50%;
+}
+/* line 177, style.scss */
+.product .product_column_info h1 {
+  margin: 0 0 24px 12px;
+}
+/* line 180, style.scss */
+.product .product_column_info p {
+  margin: 0 0 24px 36px;
+  font-family: "Sangbleu King", serif;
+  font-size: 1em;
+}
+/* line 185, style.scss */
+.product .product_column_info p.price {
+  margin: 0 0 8px 12px;
+  font-family: Frank, "Franklin Gothic";
+}
+/* line 189, style.scss */
+.product .product_column_info .product_single_add_to_cart {
+  margin: 0 0 24px 12px;
+}
+/* line 192, style.scss */
+.product .product_column_info .quantity {
+  margin-bottom: 12px;
+}
+/* line 194, style.scss */
+.product .product_column_info .quantity label {
+  margin-right: 12px;
+}
+/* line 197, style.scss */
+.product .product_column_info .quantity input {
+  width: 40px;
+  padding-left: 2px;
+}
+/* line 202, style.scss */
+.product .product_column_info button {
+  border-bottom: 1px solid buttonface;
+  padding: 4px 6px;
+  margin-left: -4px;
+  background-color: buttonface;
+  cursor: pointer;
+}
+
+/* line 212, style.scss */
+h1 {
+  font-family: "Sangbleu King";
+  font-size: 1em;
+}
+
+/* line 217, style.scss */
+#product_single_slideshow {
+  position: relative;
+}
+/* line 219, style.scss */
+#product_single_slideshow li {
+  width: calc( 100% - 64px );
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+/* line 228, style.scss */
+#product_single_slideshow li img {
+  width: 100%;
+  height: auto;
+}
+/* line 233, style.scss */
+#product_single_slideshow li.visible {
+  opacity: 1;
+}
+
+/* line 239, style.scss */
+.bookshop_wrapper table {
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-bottom: 64px;
+  text-align: left;
+}
+/* line 244, style.scss */
+.bookshop_wrapper table thead {
+  border-bottom: 1px solid black;
+}
+/* line 246, style.scss */
+.bookshop_wrapper table thead th {
+  padding: 0 0 8px 0px;
+}
+/* line 250, style.scss */
+.bookshop_wrapper table th, .bookshop_wrapper table td {
+  padding: 8px 4px 8px 0;
+  vertical-align: top;
+}
+/* line 255, style.scss */
+.bookshop_wrapper table .product-remove {
+  padding-top: 2px;
+  width: 5%;
+  min-width: 36px;
+  font-size: 1.4em;
+}
+/* line 260, style.scss */
+.bookshop_wrapper table .product-remove a {
+  border-bottom: 0px;
+}
+/* line 264, style.scss */
+.bookshop_wrapper table .product-thumbnail {
+  width: 45%;
+}
+/* line 266, style.scss */
+.bookshop_wrapper table .product-thumbnail img {
+  margin-top: 4px;
+  width: 80%;
+  height: auto;
+}
+/* line 273, style.scss */
+.bookshop_wrapper table .product-quantity label {
+  display: none;
+}
+/* line 276, style.scss */
+.bookshop_wrapper table .product-quantity input {
+  width: 40px;
+  padding-left: 2px;
+}
+/* line 281, style.scss */
+.bookshop_wrapper table td.actions {
+  padding-left: 50%;
+}
+/* line 283, style.scss */
+.bookshop_wrapper table td.actions input {
+  padding: 2px 6px;
+  margin-left: -4px;
+  margin-bottom: 8px;
+}
+/* line 289, style.scss */
+.bookshop_wrapper table a {
+  border-bottom: 1px solid black;
+}
+/* line 295, style.scss */
+.bookshop_wrapper .cart_totals {
+  width: 50%;
+  margin-left: 50%;
+}
+/* line 298, style.scss */
+.bookshop_wrapper .cart_totals h2 {
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+/* line 303, style.scss */
+.bookshop_wrapper .cart_totals th {
+  width: 200px;
+}
+/* line 306, style.scss */
+.bookshop_wrapper .cart_totals .woocommerce-shipping-calculator {
+  margin-top: 4px;
+}
+/* line 308, style.scss */
+.bookshop_wrapper .cart_totals .woocommerce-shipping-calculator p {
+  margin-bottom: 8px;
+}
+/* line 311, style.scss */
+.bookshop_wrapper .cart_totals .woocommerce-shipping-calculator a, .bookshop_wrapper .cart_totals .woocommerce-shipping-calculator button {
+  border-bottom: 1px solid buttonface;
+  padding: 4px 6px;
+  margin-left: -4px;
+  background-color: buttonface;
+}
+/* line 317, style.scss */
+.bookshop_wrapper .cart_totals .woocommerce-shipping-calculator .shipping-calculator-form {
+  width: 80%;
+}
+/* line 319, style.scss */
+.bookshop_wrapper .cart_totals .woocommerce-shipping-calculator .shipping-calculator-form #calc_shipping_country_field {
+  margin-left: -4px;
+}
+/* line 325, style.scss */
+.bookshop_wrapper .cart_totals .woocommerce-shipping-calculator input {
+  padding: 4px 6px;
+  margin-left: -4px;
+}
+/* line 329, style.scss */
+.bookshop_wrapper .cart_totals .woocommerce-shipping-calculator a:hover {
+  border-bottom: 1px solid black;
+}
+/* line 335, style.scss */
+.bookshop_wrapper .wc-proceed-to-checkout a {
+  border-bottom: 1px solid buttonface;
+  padding: 4px 6px;
+  background-color: buttonface;
+  margin-left: -4px;
+}
+/* line 341, style.scss */
+.bookshop_wrapper .wc-proceed-to-checkout a:hover {
+  border-bottom: 1px solid black;
+}
+/* line 344, style.scss */
+.bookshop_wrapper .view_shopping_cart {
+  display: none;
+}
+
+/* line 354, style.scss */
+.checkout .col-1, .checkout .col-2 {
+  margin-bottom: 64px;
+}
+/* line 358, style.scss */
+.checkout .woocommerce-billing-fields h3 {
+  border-bottom: 1px solid black;
+  display: inline-block;
+  margin: 0 0 8px 0px;
+}
+/* line 363, style.scss */
+.checkout .woocommerce-billing-fields p {
+  margin-bottom: 8px;
+  width: calc( 50% - 16px);
+  display: flex;
+}
+/* line 368, style.scss */
+.checkout .woocommerce-billing-fields p label, .checkout .woocommerce-billing-fields p input {
+  width: 50%;
+  display: inline-block;
+  padding: 4px 6px 4px 0;
+}
+/* line 373, style.scss */
+.checkout .woocommerce-billing-fields p input {
+  padding-left: 6px;
+}
+/* line 376, style.scss */
+.checkout .woocommerce-billing-fields p .select2 {
+  width: calc( 50% + 12px ) !important;
+}
+/* line 380, style.scss */
+.checkout .woocommerce-billing-fields #billing_address_2_field input {
+  margin-left: calc( 50% - 4px );
+}
+/* line 384, style.scss */
+.checkout .required {
+  text-decoration: none;
+  color: red;
+}

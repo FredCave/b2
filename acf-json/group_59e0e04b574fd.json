@@ -1,0 +1,224 @@
+{
+    "key": "group_59e0e04b574fd",
+    "title": "Products",
+    "fields": [
+        {
+            "key": "field_59e0e04b5adbb",
+            "label": "Preview Image",
+            "name": "preview_image",
+            "type": "image",
+            "value": null,
+            "instructions": "Image that will appear on the info page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59e0e04b5adcc",
+            "label": "Information",
+            "name": "information",
+            "type": "wysiwyg",
+            "value": null,
+            "instructions": "Details of the publication.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_59e0e04b5add6",
+            "label": "Technical Info",
+            "name": "technical_info",
+            "type": "wysiwyg",
+            "value": null,
+            "instructions": "Year, Publisher, Designer...",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_59e0e04b5ade8",
+            "label": "Publisher Link",
+            "name": "publisher_link",
+            "type": "repeater",
+            "value": null,
+            "instructions": "Link(s) to website(s) where the book can be bought.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Links",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_59e0e04b5fbe6",
+                    "label": "Link URL",
+                    "name": "link_url",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "This is the link address (beginning with http:\/\/)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_59e0e04b5fbf7",
+                    "label": "Link Text",
+                    "name": "link_text",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "This is the text that will appear on the page and contain the link.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_59e0e04b5ae04",
+            "label": "Video",
+            "name": "video",
+            "type": "oembed",
+            "value": null,
+            "instructions": "If you have a video, add Vimeo URL address here to show video. This will override the Image Gallery, meaning only the video will be shown.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        },
+        {
+            "key": "field_59e0e04b5ae0d",
+            "label": "Images",
+            "name": "images",
+            "type": "repeater",
+            "value": null,
+            "instructions": "If you want to have a gallery of images.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Images",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_59e0e04b666d9",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            },
+            {
+                "param": "post",
+                "operator": "!=",
+                "value": "1146"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1508171228
+}
